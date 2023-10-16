@@ -39,7 +39,11 @@
 Console.Write("Введите номер дня недели: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-if(number > 5)
+if((number < 1) || (number > 7))
+{
+    Console.WriteLine("Нет дня недели с таким номером!");
+}
+else if(number > 5) 
 {
     Console.Write("да");
 }

@@ -8,6 +8,16 @@ bool isNumber = int.TryParse(stringNumber, out number);
 // состоит ТОЛЬКО из цифр; False - в строке есть буквы.
 // Если в stringNumber только цифры, то 
 // в переменную number попадет само число; иначе - 0
+Console.WriteLine($"Длина строки(кол-во символов): {stringNumber.Length}");
+if (isNumber && stringNumber.Length >= 3) // isNumber == True
+{
+    Console.WriteLine("Ваша строчка состоит ТОЛЬКО из цифр");
+    Console.WriteLine($"{stringNumber} => {stringNumber[0]}{stringNumber[2]}");
+}
+else
+{
+    Console.WriteLine("В строчке присутсвуют буквы ИЛИ длина строки < 3 символов");
+}
 
 
 //Задача 3
