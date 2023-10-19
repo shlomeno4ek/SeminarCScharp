@@ -15,6 +15,7 @@ while(true)
         Console.WriteLine("Вы ввели цифры. Цикл закончился");
         break;
     }
+
 }
 
 
